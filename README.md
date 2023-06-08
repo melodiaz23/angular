@@ -26,7 +26,10 @@ to create a new component from terminal:
 
 ### Output Data
   **-String interpolation** -> {{data}}
+  _expressions that return a string_
+
   **-Property binding** -> [property] = "data"
+
 
 ### Event Binding
 
@@ -34,6 +37,7 @@ to create a new component from terminal:
 
 ### Two-way binding
   [(ngModel)] = "data"
+  // FormsModule needs to be added to imports[] in appModule
 
 **Libraries imports:**
   import { FormsModule } from '@angular/forms'; // Forms features

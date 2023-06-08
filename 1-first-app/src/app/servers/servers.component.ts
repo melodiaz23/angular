@@ -4,7 +4,27 @@ import { Component } from '@angular/core';
   selector: 'app-servers',
   // selector: '[app-servers]', //with [] is an attribute
   // selector: '.app-servers', // select like a class
-  template: `<app-server></app-server><app-server></app-server>`,
+  // template: `<app-server></app-server><app-server></app-server>`,
+  templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css'],
 })
-export class ServersComponent {}
+export class ServersComponent {
+  allowNewServer = false;
+  serverCreationStatus = 'No server was created';
+  serverName = '';
+
+  constructor(){
+    setTimeout(() => {
+      this.allowNewServer = true
+    }, 2000)
+  }
+
+  onCreateServer(){
+    this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
+  }
+
+  onUpdateServerName(event: any){
+    this.serverName = (<HTMLInputElement>event.target).value;
+
+  }
+}
