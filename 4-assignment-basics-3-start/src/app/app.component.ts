@@ -15,20 +15,10 @@ export class AppComponent {
   numbersOfClicks = 0;
 
 
-  tooglePassword(event: any){
+  tooglePassword(){
     this.showPassword = this.showPassword ? false : true
     this.numbersOfClicks += 1
     this.counts.push(this.numbersOfClicks);
-    console.log(this.numbersOfClicks)
-  }
-
-  getColor(){
-    if(this.numbersOfClicks < 5){
-      return 'white';
-    }
-    if(this.counts.length > 5){
-      return 'blue';
-    }
   }
 
 }
