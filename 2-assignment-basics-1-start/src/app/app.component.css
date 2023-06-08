@@ -1,0 +1,12 @@
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol li {
+  font-style: italic;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  color: cadetblue;
+}
