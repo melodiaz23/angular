@@ -28,8 +28,8 @@
 
 <button (click)="tooglePassword()">Display Details</button>
 <p *ngIf="showPassword"><b>Secret Pasword:</b> 'Tuna'</p>
-<li *ngFor="let count of counts" 
-[ngStyle]="{backgroundColor: count >= 5 ? 'blue' : 'white'}"
-[ngClass]="{countLetter: count >= 5}">
+<li *ngFor="let count of counts; let i=index" 
+[ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'white'}"
+[ngClass]="{countLetter: i >= 5}">
   {{ count }}
 </li>

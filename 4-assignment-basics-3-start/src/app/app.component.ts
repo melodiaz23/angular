@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { withLatestFrom } from 'rxjs';
-
-
 
 @Component({
   selector: 'app-root',
@@ -18,7 +15,8 @@ export class AppComponent {
   tooglePassword(){
     this.showPassword = this.showPassword ? false : true
     this.numbersOfClicks += 1
-    this.counts.push(this.numbersOfClicks);
+    // this.counts.push(this.numbersOfClicks);
+    this.counts.push(new Date());
   }
 
 }
