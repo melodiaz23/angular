@@ -39,5 +39,29 @@ to create a new component from terminal:
   [(ngModel)] = "data"
   // FormsModule needs to be added to imports[] in appModule
 
+## DIRECTORS
+
+*ngIf
+ngStyle
+ngClass
+ngFor
+
+**Planing the app**
+- Root Component
+- Header Component
+
+-Shoping list
+  - Shoping List
+  - Shoping List Edit
+  - Ingredients (model)
+
+- Recipe Book
+  -Recipe List
+  -Recipe Item
+  -Recipe Detail
+  - Recipe (model)
+
+
+
 **Libraries imports:**
   import { FormsModule } from '@angular/forms'; // Forms features
