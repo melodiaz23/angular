@@ -4,7 +4,7 @@ comands:
 
     sudo npm install -g @angular/cli // to install angular globally
     // on the carpet we want to run angular:
-    ng new first-app --no-strict
+    ng new first-app[name of the project] --no-strict
     // or if the project exist 
     //npm install
     // on the carpet we create our project
@@ -13,7 +13,7 @@ comands:
 to install bootstrap locally in the project.
   npm install --save bootstrap@3
   // and copy the path on angular.json - 'build - styles' (before src/styles.css)
-  'node_modules/bootstrap/dist/css/bootstrap.min.css'
+  'node_modules/bootstrap/dist/css/bootstrap.min.css' // according to the ubication
 
 Bootstrap provides a collection of CSS and JavaScript components and tools that help us build visually appealing and functional user interfaces.
 
@@ -21,6 +21,9 @@ to create a new component from terminal:
     ng generate component servers<name of the component>
     // or...
     ng g c servers<name of the component>
+
+To prevent the creation of the testing file, we can use --skip-tests, it will be: 
+  ng g c [name of the component] --skip-tests
 
 ## DATA BINDING
 
