@@ -64,6 +64,10 @@ ngFor
   -Recipe Detail
   - Recipe (model)
 
+## Model
+
+TypeScript file, that is a blueprint for objects we create
+
 
 
 **Libraries imports:**
