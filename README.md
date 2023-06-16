@@ -48,6 +48,7 @@ To prevent the creation of the testing file, we can use --skip-tests, it will be
 ngStyle
 ngClass
 ngFor
+ng-content
 
 **Planing the app**
 - Root Component
@@ -66,7 +67,19 @@ ngFor
 
 ## Model
 
-TypeScript file, that is a blueprint for objects we create
+TypeScript file, that is a blueprint for objects we create.
+
+## Lifecycle Hook
+
+ngOnChanges -> Called after a bound input property changes.
+ngOnInit -> Called once the component is initialized.
+ngDoCheck -> Called during every change detection run.
+ngAfterContentInit -> Called after content (ng-content) has been projected into view.
+ngAfterContentChecked -> Called every time the project content has been checked.
+ngAfterViewInit -> Called after the components view (and child views has been initialized).
+ngAfterViewChecked* -> Called every time the view (and child views) has been checked.
+ngOnDestroy -> Called once the component is about to be desroyed.
+
 
 
 
