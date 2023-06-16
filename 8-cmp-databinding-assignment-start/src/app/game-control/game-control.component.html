@@ -1,4 +1,12 @@
-<button class="btn btn-primary">Start Game</button>
+<button class="btn btn-primary" (click)="startEvent()">
+  Start Game
+</button>
 &nbsp;
-<button class="btn btn-danger">Stop Game</button>
+<button class="btn btn-danger" (click)="stopEvent()">
+  Stop Game
+</button>
 
+<hr>
+
+<app-even></app-even>
+<app-odd ></app-odd>
