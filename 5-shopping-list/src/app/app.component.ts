@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showRecipe: boolean = false;
+  showRecipe: boolean = true;
   showList: boolean = false;
 
-  showComponentHandler(event: string){
+  onNavigate(event: string){
     console.log('event:' + event);
     if (event === 'recipe'){
       this.showList = false;
