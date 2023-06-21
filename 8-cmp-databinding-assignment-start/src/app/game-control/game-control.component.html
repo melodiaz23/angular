@@ -8,5 +8,5 @@
 
 <hr>
 
-<app-even></app-even>
-<app-odd ></app-odd>
+<app-odd *ngFor="let number of oddNumber" [oddNumber]="number"></app-odd>
+<app-even *ngFor="let number of evenNumber" [evenNumber]="number"></app-even>
