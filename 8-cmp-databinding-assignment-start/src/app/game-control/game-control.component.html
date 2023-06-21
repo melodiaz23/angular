@@ -1,12 +1,10 @@
-<button class="btn btn-primary" (click)="startEvent()">
+<button class="btn btn-primary" (click)="onStartGame()">
   Start Game
 </button>
 &nbsp;
-<button class="btn btn-danger" (click)="stopEvent()">
+<button class="btn btn-danger" (click)="onStopGame()">
   Stop Game
 </button>
 
 <hr>
 
-<app-odd *ngFor="let number of oddNumber" [oddNumber]="number"></app-odd>
-<app-even *ngFor="let number of evenNumber" [evenNumber]="number"></app-even>

@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./odd.component.css']
 })
 export class OddComponent {
-  @Input('oddNumber') oddNumber: number;
+  @Input() oddNumber: number;
 }
