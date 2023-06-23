@@ -8,19 +8,19 @@ import {  Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent {
-  @Output() showDetails = new EventEmitter<Boolean>
+  @Output() showDetails = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is simply a test', 'https://hips.hearstapps.com/hmg-prod/images/casserole-recipes-6478d7f325a3a.jpeg'),
-    new Recipe('A Test Recipe', 'This is simply a test', 'https://hips.hearstapps.com/hmg-prod/images/casserole-recipes-6478d7f325a3a.jpeg'),
-    new Recipe('A Test Recipe', 'This is simply a test', 'https://hips.hearstapps.com/hmg-prod/images/casserole-recipes-6478d7f325a3a.jpeg')
+    new Recipe('Second Test Recipe', 'This is simply a test', 'https://hips.hearstapps.com/hmg-prod/images/casserole-recipes-6478d7f325a3a.jpeg'),
+    new Recipe('Third Test Recipe', 'This is simply a test', 'https://hips.hearstapps.com/hmg-prod/images/casserole-recipes-6478d7f325a3a.jpeg')
   ];
 
   constructor(){
   }
 
-  elementClicked(event: boolean){
-    this.showDetails.emit(event);
+  onRecipeSelected(recipe: Recipe){
+    this.showDetails.emit(recipe);
   }
 
 }
