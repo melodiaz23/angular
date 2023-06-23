@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent {
+  showDetails: boolean = false
+
+  wantToShow(event: boolean){
+    this.showDetails = event
+  }
 
 }
