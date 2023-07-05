@@ -8,6 +8,11 @@ import { Component, EventEmitter, Output } from "@angular/core";
 export class HeaderComponent{
   @Output() clickEvent = new EventEmitter<string>()
   collapsed = true;
+  dropdownIsOpen = false;
+
+  manageClicked(){
+    this.dropdownIsOpen = !this.dropdownIsOpen;
+  }
 
   onSelect(feature: string){
     console.log(feature)

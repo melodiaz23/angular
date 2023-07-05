@@ -8,7 +8,7 @@ comands:
     // or if the project exist 
     //npm install
     // on the carpet we create our project
-    ng serve // To run a serveng serve
+    ng serve // To run a serveng se
 
 to install bootstrap locally in the project.
   npm install --save bootstrap@3
@@ -24,6 +24,9 @@ to create a new component from terminal:
 
 To prevent the creation of the testing file, we can use --skip-tests, it will be: 
   ng g c [name of the component] --skip-tests
+
+To create a directive: 
+  ng g d [name of the component]
 
 ## DATA BINDING
 
@@ -49,6 +52,7 @@ ngStyle
 ngClass
 ngFor
 ng-content
+*ngSwitch
 
 **Planing the app**
 - Root Component

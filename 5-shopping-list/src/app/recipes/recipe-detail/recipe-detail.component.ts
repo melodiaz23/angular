@@ -8,4 +8,14 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeDetailComponent {
   @Input() recipe: Recipe;
+  manageRecipeClicked : Boolean = false
+
+  manageRecipe(){
+    this.manageRecipeClicked = !this.manageRecipeClicked;
+    // if (this.manageRecipeClicked){
+    //   this.manageRecipeClicked = false;
+    // } else {
+    //   this.manageRecipeClicked = true
+    // }
+  }
 }
