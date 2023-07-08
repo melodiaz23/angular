@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   
   onSetToInactive(id: number) {
     this.user.inactiveUser(id)
+
   }
 
   onSetToActive(id: number) {
