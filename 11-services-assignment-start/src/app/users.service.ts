@@ -16,7 +16,6 @@ export class UserService {
   }
 
   activeUser(id){
-    console.log('activeUser works');
     this.activeUsers.push(this.inactiveUsers[id]);
     this.inactiveUsers.splice(id, 1);
     this.count.counter('active')
