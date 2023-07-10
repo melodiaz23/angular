@@ -7,6 +7,7 @@ export class CounterService {
   
   constructor(){
   }
+  
   counter(statusChanged: string){
     if (statusChanged === 'inactive'){
       this.changesToInactive++;
