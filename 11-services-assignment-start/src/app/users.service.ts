@@ -9,13 +9,13 @@ export class UserService {
   constructor(private count: CounterService){
   }
   
-  inactiveUser(id: number){
+  setToInactiveUser(id: number){
     this.inactiveUsers.push(this.activeUsers[id]);
     this.activeUsers.splice(id, 1);
     this.count.counter('inactive')
   }
 
-  activeUser(id: number){
+  setToActiveUser(id: number){
     this.activeUsers.push(this.inactiveUsers[id]);
     this.inactiveUsers.splice(id, 1);
     this.count.counter('active')

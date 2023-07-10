@@ -19,11 +19,11 @@ export class AppComponent implements OnInit {
   }
   
   onSetToInactive(id: number) {
-    this.user.inactiveUser(id)
+    this.user.setToInactiveUser(id)
 
   }
 
   onSetToActive(id: number) {
-    this.user.activeUser(id);
+    this.user.setToActiveUser(id);
   }
 }
